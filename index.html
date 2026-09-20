@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Housam Mohammad | Research &amp; Engineering Portfolio</title>
@@ -7,7 +8,7 @@
   <!-- Inter Font Family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -30,6 +31,24 @@
     }
     .editable-active:hover {
       background-color: rgba(219, 234, 254, 0.95);
+    }
+
+    /* Ratio container for media gallery */
+    .aspect-video-ratio {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+    .aspect-video-ratio iframe,
+    .aspect-video-ratio video,
+    .aspect-video-ratio img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* Print & PDF Export Formatting */
@@ -77,20 +96,28 @@
       background: #94a3b8;
     }
   </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-5{bottom:1.25rem}.right-5{right:1.25rem}.-left-\[9px\]{left:-9px}.top-1{top:0.25rem}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-2\.5{margin-bottom:0.625rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mr-1\.5{margin-right:0.375rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-5{margin-top:1.25rem}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.ml-1\.5{margin-left:0.375rem}.ml-2{margin-left:0.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-24{height:6rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-full{height:100%}.min-h-\[1050px\]{min-height:1050px}.min-h-screen{min-height:100vh}.w-1\/2{width:50%}.w-12{width:3rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-24{width:6rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-full{width:100%}.max-w-5xl{max-width:64rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-1{gap:0.25rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.625rem * var(--tw-space-x-reverse));margin-left:calc(0.625rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-l-2{border-left-width:2px}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/60{border-color:rgb(226 232 240 / 0.6)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-rose-950{--tw-bg-opacity:1;background-color:rgb(76 5 25 / var(--tw-bg-opacity, 1))}.bg-slate-50\/80{background-color:rgb(248 250 252 / 0.8)}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50\/70{background-color:rgb(248 250 252 / 0.7)}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-slate-800{--tw-gradient-to:rgb(30 41 59 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #1e293b var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-blue-900{--tw-gradient-to:#1e3a8a var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-3\.5{padding:0.875rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pb-6{padding-bottom:1.5rem}.pl-6{padding-left:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[10px\]{font-size:10px}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-blue-100 *::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-900 *::selection{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.selection\:bg-blue-100::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-900::selection{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.last\:border-transparent:last-child{border-color:transparent}.last\:pb-0:last-child{padding-bottom:0px}.hover\:border-slate-300:hover{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-900:hover{--tw-bg-opacity:1;background-color:rgb(136 19 55 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:text-blue-600:hover{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.hover\:text-blue-800:hover{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.hover\:text-rose-500:hover{--tw-text-opacity:1;color:rgb(244 63 94 / var(--tw-text-opacity, 1))}.hover\:text-rose-700:hover{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-blue-600:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(37 99 235 / var(--tw-ring-opacity, 1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:mt-0{margin-top:0px}.sm\:h-28{height:7rem}.sm\:w-28{width:7rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-baseline{align-items:baseline}.sm\:space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:p-8{padding:2rem}.sm\:p-4{padding:1rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:flex-col{flex-direction:column}.lg\:items-center{align-items:center}.lg\:border-b-0{border-bottom-width:0px}.lg\:border-r{border-right-width:1px}.lg\:p-10{padding:2.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+</head>
 <body class="min-h-screen py-6 px-3 sm:px-6 lg:px-8 text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
 
   <!-- Top Navigation Bar (Hidden during Print) -->
-  <header class="no-print max-w-5xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-3 bg-white border border-slate-200 rounded-xl px-4 sm:px-6 py-3 shadow-xs">
+  <header class="no-print max-w-6xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-3 bg-white border border-slate-200 rounded-xl px-4 sm:px-6 py-3 shadow-sm">
     <div class="flex items-center space-x-3">
       <span class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-      <span class="text-xs sm:text-sm font-semibold text-slate-700 tracking-wide uppercase">Dr. Housam Mohammad — Academic &amp; Engineering CV</span>
-      <span id="editModeBadge" class="text-xs bg-amber-100 text-amber-800 font-semibold px-2.5 py-0.5 rounded-full border border-amber-300">
+      <span class="text-xs sm:text-sm font-semibold text-slate-700 tracking-wide uppercase">Dr. Housam Mohammad — Academic &amp; Engineering Portfolio</span>
+      <span id="editModeBadge" class="hidden text-xs bg-amber-100 text-amber-800 font-semibold px-2.5 py-0.5 rounded-full border border-amber-300">
         Live Editor Active
       </span>
     </div>
     
     <div class="flex items-center space-x-2 sm:space-x-3">
+      <!-- Media Gallery Anchor Button -->
+      <a href="#media-gallery-section" class="inline-flex items-center px-3 py-1.5 border border-slate-200 rounded-lg text-xs sm:text-sm font-medium text-slate-600 bg-white hover:bg-slate-50 transition shadow-2xs">
+        <svg class="w-4 h-4 mr-1.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+        </svg>
+        Media Gallery
+      </a>
+
       <!-- Print / PDF Button -->
       <button onclick="window.print()" class="inline-flex items-center px-3 py-1.5 border border-slate-300 rounded-lg text-xs sm:text-sm font-medium text-slate-700 bg-white hover:bg-slate-50 transition shadow-2xs active:scale-95">
         <svg class="w-4 h-4 mr-1.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -104,13 +131,13 @@
         <svg id="lockIcon" class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
         </svg>
-        <span id="adminBtnText">Exit Admin</span>
+        <span id="adminBtnText">Admin Access</span>
       </button>
     </div>
   </header>
 
   <!-- Floating CMS Edit Control Bar (Visible Only in Edit Mode) -->
-  <div id="cmsControlBar" class="no-print max-w-5xl mx-auto mb-6 bg-slate-900 text-white rounded-xl p-4 shadow-xl border border-slate-700">
+  <div id="cmsControlBar" class="no-print max-w-6xl mx-auto mb-6 bg-slate-900 text-white rounded-xl p-4 shadow-xl border border-slate-700 hidden">
     <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3">
       <div class="flex items-center space-x-3">
         <div class="p-2 bg-blue-600 rounded-lg">
@@ -120,11 +147,17 @@
         </div>
         <div>
           <h4 class="text-xs sm:text-sm font-semibold tracking-wide text-white">Live Editor Active</h4>
-          <p class="text-[11px] text-slate-400">Click any text directly on the page to modify content in real-time.</p>
+          <p class="text-[11px] text-slate-400">Click text to edit, click camera icon to upload photo, or add photos/videos to the gallery below.</p>
         </div>
       </div>
       
       <div class="flex flex-wrap items-center gap-2">
+        <button onclick="openPhotoModal()" class="px-2.5 py-1.5 bg-blue-700 hover:bg-blue-600 text-xs font-semibold rounded-md border border-blue-500 text-white transition flex items-center">
+          📷 Edit Photo
+        </button>
+        <button onclick="openAddMediaModal()" class="px-2.5 py-1.5 bg-emerald-700 hover:bg-emerald-600 text-xs font-semibold rounded-md border border-emerald-500 text-white transition flex items-center">
+          🎬 + Add Media
+        </button>
         <button onclick="addNewExperience()" class="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-medium rounded-md border border-slate-600 text-slate-200 transition">
           + Experience
         </button>
@@ -132,16 +165,13 @@
           + Publication
         </button>
         <button onclick="addNewProject()" class="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-medium rounded-md border border-slate-600 text-slate-200 transition">
-          + Project
+          + Rig / Bench
         </button>
         <button onclick="addNewSkill()" class="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-medium rounded-md border border-slate-600 text-slate-200 transition">
           + Skill
         </button>
         <button onclick="saveAllChanges()" class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 text-xs font-semibold rounded-md text-white shadow-xs transition active:scale-95">
           Save Changes
-        </button>
-        <button onclick="discardChanges()" class="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-medium rounded-md text-slate-300 transition" title="Discard unsaved changes">
-          Discard
         </button>
         <button onclick="openSecurityModal()" class="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-xs font-medium rounded-md text-slate-300 transition" title="Security Settings">
           🔑 Pass
@@ -157,29 +187,35 @@
   </div>
 
   <!-- Master Document Container: Modern Minimalist Two-Column Split Layout -->
-  <main class="resume-container max-w-5xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden transition-all duration-300">
+  <main class="resume-container max-w-6xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden transition-all duration-300 mb-10">
     <div class="grid grid-cols-1 lg:grid-cols-12 min-h-[1050px]">
 
       <!-- ================= LEFT SIDEBAR (4 Columns) ================= -->
       <aside class="lg:col-span-4 bg-slate-50/80 border-b lg:border-b-0 lg:border-r border-slate-200 p-6 sm:p-8 flex flex-col justify-between">
         <div class="space-y-6">
 
-          <!-- Avatar & Header Quick Identity -->
+          <!-- Avatar & Header Quick Identity with Photo Controls -->
           <div class="text-left flex flex-col sm:flex-row lg:flex-col items-start gap-4">
             <div class="relative group">
-              <div id="avatarContainer" class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-tr from-slate-900 via-slate-800 to-blue-900 text-white flex items-center justify-center font-bold text-3xl shadow-md border-2 border-white overflow-hidden">
+              <div id="avatarContainer" class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-gradient-to-tr from-slate-900 via-slate-800 to-blue-900 text-white flex items-center justify-center font-bold text-3xl shadow-md border-2 border-white overflow-hidden relative">
                 <span id="avatarInitials">HM</span>
                 <img id="avatarImage" src="" alt="Dr. Housam Mohammad" class="hidden w-full h-full object-cover">
               </div>
-              <button onclick="promptPhotoUrl()" class="edit-only absolute inset-0 bg-black/60 rounded-2xl flex items-center justify-center text-xs text-white font-medium backdrop-blur-xs transition">
-                Change Photo
+
+              <!-- Quick Upload / Edit Button Overlay -->
+              <button onclick="openPhotoModal()" class="edit-only hidden absolute inset-0 bg-black/60 rounded-2xl flex flex-col items-center justify-center text-xs text-white font-semibold backdrop-blur-xs transition hover:bg-black/75">
+                <svg class="w-6 h-6 mb-1 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span>Edit Photo</span>
               </button>
             </div>
             
             <div class="mt-1 w-full">
-              <h1 id="fullName" class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 leading-tight editable-active" data-key="name" contenteditable="true">Ing. Housam Mohammad, Ph.D.</h1>
-              <p id="targetTitle" class="text-xs sm:text-sm font-semibold text-blue-600 uppercase tracking-wider mt-1.5 editable-active" data-key="title" contenteditable="true">Doctor of Engineering &amp; ResearchER</p>
-              <p id="institutionName" class="text-xs text-slate-500 font-medium mt-1 editable-active" data-key="institution" contenteditable="true">Brno University of Technology (VUT FME)</p>
+              <h1 id="fullName" class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 leading-tight" data-key="name">Ing. Housam Mohammad, Ph.D.</h1>
+              <p id="targetTitle" class="text-xs sm:text-sm font-semibold text-blue-600 uppercase tracking-wider mt-1.5" data-key="title">Doctor of Engineering &amp; Researcher</p>
+              <p id="institutionName" class="text-xs text-slate-500 font-medium mt-1" data-key="institution">Brno University of Technology (VUT FME)</p>
             </div>
           </div>
 
@@ -191,32 +227,32 @@
                 <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <span id="contactEmail" class="hover:text-blue-600 transition truncate editable-active" data-key="email" contenteditable="true">housammhd@outlook.com</span>
+                <span id="contactEmail" class="hover:text-blue-600 transition truncate" data-key="email">housammhd@outlook.com</span>
               </li>
               <li class="flex items-center space-x-2.5">
                 <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                 </svg>
-                <span id="contactDept" class="text-slate-600 text-xs editable-active" data-key="dept" contenteditable="true">Institute of Machine and Industrial Design</span>
+                <span id="contactDept" class="text-slate-600 text-xs" data-key="dept">Institute of Machine and Industrial Design</span>
               </li>
               <li class="flex items-center space-x-2.5">
                 <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
-                <span id="contactLocation" data-key="location" contenteditable="true" class="editable-active">Brno, South Moravian Region, Czechia</span>
+                <span id="contactLocation" data-key="location">Brno, South Moravian Region, Czechia</span>
               </li>
               <li class="flex items-center space-x-2.5">
                 <svg class="w-4 h-4 text-slate-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
                 </svg>
-                <span id="contactLinkedIn" class="text-blue-600 hover:underline cursor-pointer truncate editable-active" data-key="linkedin" contenteditable="true">linkedin.com/in/housam-mohammad</span>
+                <a href="https://linkedin.com/in/housam-mohammad" target="_blank" id="contactLinkedIn" class="text-blue-600 hover:underline cursor-pointer truncate" data-key="linkedin">linkedin.com/in/housam-mohammad</a>
               </li>
               <li class="flex items-center space-x-2.5">
                 <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                 </svg>
-                <span id="contactResearchGate" class="hover:text-blue-600 transition truncate text-xs editable-active" data-key="researchgate" contenteditable="true">researchgate.net/profile/Housam-Mohammad</span>
+                <a href="https://www.researchgate.net/profile/Housam-Mohammad" target="_blank" id="contactResearchGate" class="hover:text-blue-600 transition truncate text-xs" data-key="researchgate">researchgate.net/profile/Housam-Mohammad</a>
               </li>
             </ul>
           </div>
@@ -227,19 +263,19 @@
             <div id="educationContainer" class="space-y-3">
               <div>
                 <div class="flex items-baseline justify-between">
-                  <h4 class="text-xs font-bold text-slate-900 editable-active" data-key="edu1_degree" contenteditable="true">Ph.D. / Doctor of Engineering</h4>
-                  <span class="text-[11px] text-slate-500 font-medium editable-active" data-key="edu1_year" contenteditable="true">Brno</span>
+                  <h4 class="text-xs font-bold text-slate-900" data-key="edu1_degree">Ph.D. / Doctor of Engineering</h4>
+                  <span class="text-[11px] text-slate-500 font-medium" data-key="edu1_year">Brno</span>
                 </div>
-                <p class="text-xs text-blue-600 font-medium editable-active" data-key="edu1_field" contenteditable="true">Design and Process Engineering</p>
-                <p class="text-[11px] text-slate-500 editable-active" data-key="edu1_school" contenteditable="true">Brno University of Technology, Faculty of Mechanical Engineering</p>
+                <p class="text-xs text-blue-600 font-medium" data-key="edu1_field">Design and Process Engineering</p>
+                <p class="text-[11px] text-slate-500" data-key="edu1_school">Brno University of Technology, Faculty of Mechanical Engineering</p>
               </div>
               <div class="pt-2 border-t border-slate-200/60">
                 <div class="flex items-baseline justify-between">
-                  <h4 class="text-xs font-bold text-slate-900 editable-active" data-key="edu2_degree" contenteditable="true">Ing. (Master of Science)</h4>
-                  <span class="text-[11px] text-slate-500 font-medium editable-active" data-key="edu2_year" contenteditable="true">Honors</span>
+                  <h4 class="text-xs font-bold text-slate-900" data-key="edu2_degree">Ing. (Master of Science)</h4>
+                  <span class="text-[11px] text-slate-500 font-medium" data-key="edu2_year">Honors</span>
                 </div>
-                <p class="text-xs text-blue-600 font-medium editable-active" data-key="edu2_field" contenteditable="true">Mechanical Engineering</p>
-                <p class="text-[11px] text-slate-500 editable-active" data-key="edu2_school" contenteditable="true">Faculty of Mechanical Engineering, BUT</p>
+                <p class="text-xs text-blue-600 font-medium" data-key="edu2_field">Mechanical Engineering</p>
+                <p class="text-[11px] text-slate-500" data-key="edu2_school">Faculty of Mechanical Engineering, BUT</p>
               </div>
             </div>
           </div>
@@ -248,58 +284,26 @@
           <div class="pt-4 border-t border-slate-200">
             <div class="flex items-center justify-between mb-2.5">
               <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400">Core Expertise</h3>
-              <button onclick="addNewSkill()" class="edit-only text-xs text-blue-600 hover:text-blue-800 font-semibold">+ Add</button>
+              <button onclick="addNewSkill()" class="edit-only hidden text-xs text-blue-600 hover:text-blue-800 font-semibold">+ Add</button>
             </div>
-            <div id="skillsContainer" class="flex flex-wrap gap-1.5"><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="0" contenteditable="true">Acoustic Emission Testing (AE)</span>
-          <button onclick="deleteSkill(0)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="1" contenteditable="true">Condition Monitoring (CM)</span>
-          <button onclick="deleteSkill(1)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="2" contenteditable="true">Rolling Contact Fatigue (RCF)</span>
-          <button onclick="deleteSkill(2)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="3" contenteditable="true">Toroidal Roller Bearings</span>
-          <button onclick="deleteSkill(3)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="4" contenteditable="true">Design Engineering</span>
-          <button onclick="deleteSkill(4)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="5" contenteditable="true">CAD / CAE Systems</span>
-          <button onclick="deleteSkill(5)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="6" contenteditable="true">Non-Destructive Testing (NDT)</span>
-          <button onclick="deleteSkill(6)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="7" contenteditable="true">Finite Element Analysis (FEA)</span>
-          <button onclick="deleteSkill(7)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="8" contenteditable="true">Signal &amp; Frequency Processing</span>
-          <button onclick="deleteSkill(8)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="9" contenteditable="true">Magnetorheological Dampers</span>
-          <button onclick="deleteSkill(9)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="10" contenteditable="true">Experimental Test Rig Design</span>
-          <button onclick="deleteSkill(10)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span><span class="inline-flex items-center text-[11px] sm:text-xs font-medium px-2.5 py-1 bg-white border border-slate-200 text-slate-700 rounded-md shadow-2xs">
-          <span class="editable-field editable-active" data-skill-idx="11" contenteditable="true">University Pedagogy (4KC-A)</span>
-          <button onclick="deleteSkill(11)" class="ml-1.5 text-rose-500 hover:text-rose-700 font-bold" title="Delete skill">×</button>
-        </span></div>
+            <div id="skillsContainer" class="flex flex-wrap gap-1.5">
+              <!-- Dynamically rendered -->
+            </div>
           </div>
 
           <!-- Teaching & Laboratory Competencies -->
           <div class="pt-4 border-t border-slate-200">
             <h3 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Teaching &amp; Software</h3>
-            <div id="credentialsList" class="space-y-1.5 text-xs text-slate-600 editable-active" data-key="credentials" contenteditable="true"><p>• <strong>Instruction:</strong> CAD &amp; Machine Design (4KC-A)</p><p>• <strong>CAE/FEA:</strong> ANSYS Workbench, SolidWorks Simulation</p><p>• <strong>CAD:</strong> Autodesk Inventor, PTC Creo, SolidWorks</p><p>• <strong>Signal Analysis:</strong> MATLAB, LabVIEW, AEwin</p><p>• <strong>Languages:</strong> English (Professional), Arabic (Native), Czech</p></div>
+            <div id="credentialsList" class="space-y-1.5 text-xs text-slate-600" data-key="credentials">
+              <!-- Dynamically populated -->
+            </div>
           </div>
 
         </div>
 
         <!-- Sidebar Footer Status -->
         <div class="pt-5 mt-5 border-t border-slate-200 text-slate-400 text-[11px] leading-relaxed">
-          <p id="availabilityStatus" data-key="status" contenteditable="true" class="editable-active">🔬 Active in Experimental Research, Industry Testing &amp; Academic Collaboration</p>
+          <p id="availabilityStatus" data-key="status">🔬 Active in Experimental Research, Industry Testing &amp; Academic Collaboration</p>
         </div>
       </aside>
 
@@ -314,7 +318,9 @@
               Research Profile &amp; Executive Summary
             </h2>
           </div>
-          <p id="executiveSummary" class="text-slate-600 leading-relaxed text-xs sm:text-sm editable-active" data-key="summary" contenteditable="true">Doctor of Engineering and Research Assistant at Brno University of Technology, specializing in Design Engineering, Non-Destructive Testing (NDT), Condition Monitoring (CM), and Acoustic Emission (AE) diagnostics. Extensive experimental track record analyzing Rolling Contact Fatigue (RCF), bearing defect propagation in toroidal and low-speed roller bearings, and semi-active magnetorheological damping systems. Proven educator instructing university coursework in Machine Design and CAD methodologies.</p>
+          <p id="executiveSummary" class="text-slate-600 leading-relaxed text-xs sm:text-sm" data-key="summary">
+            Doctor of Engineering and Research Assistant at Brno University of Technology, specializing in Design Engineering, Non-Destructive Testing (NDT), Condition Monitoring (CM), and Acoustic Emission (AE) diagnostics. Extensive experimental track record analyzing Rolling Contact Fatigue (RCF), bearing defect propagation in toroidal and low-speed roller bearings, and semi-active magnetorheological damping systems. Proven educator instructing university coursework in Machine Design and CAD methodologies.
+          </p>
         </div>
 
         <!-- Research & Academic Positions -->
@@ -324,90 +330,12 @@
               <span class="w-2 h-2 rounded-full bg-blue-600 mr-2"></span>
               Research &amp; Academic Appointments
             </h2>
-            <button onclick="addNewExperience()" class="edit-only text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-medium hover:bg-blue-100 transition">+ Add Position</button>
+            <button onclick="addNewExperience()" class="edit-only hidden text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-medium hover:bg-blue-100 transition">+ Add Position</button>
           </div>
 
-          <div id="experienceTimeline" class="space-y-6"><div class="relative pl-6 pb-6 border-l-2 border-slate-200 last:border-transparent last:pb-0">
-          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full border-2 border-white bg-blue-600 shadow-xs"></div>
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-1">
-            <div class="flex items-center space-x-2 flex-wrap gap-1">
-              <h3 class="text-sm sm:text-base font-bold text-slate-900 editable-field editable-active" data-job-role="0" contenteditable="true">Research Assistant &amp; Academic Investigator</h3>
-              <span class="text-[11px] bg-slate-100 text-slate-700 font-semibold px-2 py-0.5 rounded border border-slate-200 editable-field editable-active" data-job-type="0" contenteditable="true">Academic Appointment</span>
-            </div>
-            <span class="text-xs font-semibold text-slate-500 mt-1 sm:mt-0 editable-field editable-active" data-job-period="0" contenteditable="true">Brno, Czechia • Present</span>
+          <div id="experienceTimeline" class="space-y-6">
+            <!-- Dynamically rendered -->
           </div>
-          <div class="text-xs sm:text-sm font-semibold text-blue-700 mb-2 editable-field editable-active" data-job-company="0" contenteditable="true">Brno University of Technology — Faculty of Mechanical Engineering</div>
-          <ul class="space-y-1.5 mt-2">
-            
-          <li class="flex items-start text-xs sm:text-sm text-slate-600">
-            <span class="text-blue-500 mr-2 mt-0.5 font-bold">•</span>
-            <span class="editable-field flex-1 editable-active" data-job-bullet="0-0" contenteditable="true">Conduct experimental and analytical research within Pavel Mazal's Lab at the Institute of Machine and Industrial Design.</span>
-            <button onclick="deleteBullet(0, 0)" class="text-slate-400 hover:text-rose-500 ml-2" title="Remove bullet">×</button>
-          </li>
-        
-          <li class="flex items-start text-xs sm:text-sm text-slate-600">
-            <span class="text-blue-500 mr-2 mt-0.5 font-bold">•</span>
-            <span class="editable-field flex-1 editable-active" data-job-bullet="0-1" contenteditable="true">Pioneered dominant and peak frequency evaluation methods utilizing Acoustic Emission (AE) hits for detecting defect propagation in rolling bearings.</span>
-            <button onclick="deleteBullet(0, 1)" class="text-slate-400 hover:text-rose-500 ml-2" title="Remove bullet">×</button>
-          </li>
-        
-          <li class="flex items-start text-xs sm:text-sm text-slate-600">
-            <span class="text-blue-500 mr-2 mt-0.5 font-bold">•</span>
-            <span class="editable-field flex-1 editable-active" data-job-bullet="0-2" contenteditable="true">Spearhead advanced condition monitoring protocols for wind turbine main shaft bearings subject to low-speed heavy rotor dynamics.</span>
-            <button onclick="deleteBullet(0, 2)" class="text-slate-400 hover:text-rose-500 ml-2" title="Remove bullet">×</button>
-          </li>
-        
-          <li class="flex items-start text-xs sm:text-sm text-slate-600">
-            <span class="text-blue-500 mr-2 mt-0.5 font-bold">•</span>
-            <span class="editable-field flex-1 editable-active" data-job-bullet="0-3" contenteditable="true">Supervise laboratory testing and instruct university engineering students in 'Machine Design and CAD' (course 4KC-A).</span>
-            <button onclick="deleteBullet(0, 3)" class="text-slate-400 hover:text-rose-500 ml-2" title="Remove bullet">×</button>
-          </li>
-        
-          </ul>
-          
-            <div class="mt-3 flex items-center space-x-3 text-xs">
-              <button onclick="addBullet(0)" class="text-blue-600 hover:underline font-medium">+ Add bullet</button>
-              <button onclick="deleteJob(0)" class="text-rose-500 hover:underline font-medium">Delete Appointment</button>
-            </div>
-          
-        </div><div class="relative pl-6 pb-6 border-l-2 border-slate-200 last:border-transparent last:pb-0">
-          <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full border-2 border-white bg-blue-600 shadow-xs"></div>
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-1">
-            <div class="flex items-center space-x-2 flex-wrap gap-1">
-              <h3 class="text-sm sm:text-base font-bold text-slate-900 editable-field editable-active" data-job-role="1" contenteditable="true">Doctoral Researcher (Ph.D. Candidate)</h3>
-              <span class="text-[11px] bg-slate-100 text-slate-700 font-semibold px-2 py-0.5 rounded border border-slate-200 editable-field editable-active" data-job-type="1" contenteditable="true">Doctoral Program</span>
-            </div>
-            <span class="text-xs font-semibold text-slate-500 mt-1 sm:mt-0 editable-field editable-active" data-job-period="1" contenteditable="true">Brno, Czechia</span>
-          </div>
-          <div class="text-xs sm:text-sm font-semibold text-blue-700 mb-2 editable-field editable-active" data-job-company="1" contenteditable="true">Department of Design — VUT FSI</div>
-          <ul class="space-y-1.5 mt-2">
-            
-          <li class="flex items-start text-xs sm:text-sm text-slate-600">
-            <span class="text-blue-500 mr-2 mt-0.5 font-bold">•</span>
-            <span class="editable-field flex-1 editable-active" data-job-bullet="1-0" contenteditable="true">Conducted comprehensive dissertation investigations on Rolling Contact Fatigue (RCF) behavior in specialized toroidal roller bearings.</span>
-            <button onclick="deleteBullet(1, 0)" class="text-slate-400 hover:text-rose-500 ml-2" title="Remove bullet">×</button>
-          </li>
-        
-          <li class="flex items-start text-xs sm:text-sm text-slate-600">
-            <span class="text-blue-500 mr-2 mt-0.5 font-bold">•</span>
-            <span class="editable-field flex-1 editable-active" data-job-bullet="1-1" contenteditable="true">Developed signal processing algorithms linking Acoustic Emission energy and spectral distributions with microscopic fatigue nucleation.</span>
-            <button onclick="deleteBullet(1, 1)" class="text-slate-400 hover:text-rose-500 ml-2" title="Remove bullet">×</button>
-          </li>
-        
-          <li class="flex items-start text-xs sm:text-sm text-slate-600">
-            <span class="text-blue-500 mr-2 mt-0.5 font-bold">•</span>
-            <span class="editable-field flex-1 editable-active" data-job-bullet="1-2" contenteditable="true">Participated in industrial collaborative research initiatives evaluating semi-active car suspension dynamics with fast magnetorheological damping.</span>
-            <button onclick="deleteBullet(1, 2)" class="text-slate-400 hover:text-rose-500 ml-2" title="Remove bullet">×</button>
-          </li>
-        
-          </ul>
-          
-            <div class="mt-3 flex items-center space-x-3 text-xs">
-              <button onclick="addBullet(1)" class="text-blue-600 hover:underline font-medium">+ Add bullet</button>
-              <button onclick="deleteJob(1)" class="text-rose-500 hover:underline font-medium">Delete Appointment</button>
-            </div>
-          
-        </div></div>
         </div>
 
         <!-- Peer-Reviewed Publications -->
@@ -417,40 +345,12 @@
               <span class="w-2 h-2 rounded-full bg-blue-600 mr-2"></span>
               Selected Scientific Publications
             </h2>
-            <button onclick="addNewPublication()" class="edit-only text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-medium hover:bg-blue-100 transition">+ Add Publication</button>
+            <button onclick="addNewPublication()" class="edit-only hidden text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-medium hover:bg-blue-100 transition">+ Add Publication</button>
           </div>
 
-          <div id="publicationsContainer" class="space-y-3.5"><div class="bg-slate-50/70 border border-slate-200 rounded-xl p-3.5 sm:p-4 hover:border-slate-300 transition shadow-2xs">
-          <div class="flex items-start justify-between gap-2">
-            <div class="flex-1">
-              <h4 class="text-xs sm:text-sm font-bold text-slate-900 editable-field editable-active" data-pub-title="0" contenteditable="true">New method for condition monitoring of low-speed bearings using peak frequency of acoustic emission hits</h4>
-              <p class="text-[11px] text-blue-600 font-medium mt-0.5 editable-field editable-active" data-pub-authors="0" contenteditable="true">Baraah Maya, Housam Mohammad, František Vlašic, Pavel Mazal</p>
-              <p class="text-[11px] font-semibold text-slate-500 mt-0.5 editable-field editable-active" data-pub-journal="0" contenteditable="true">📖 Insight - Non-Destructive Testing and Condition Monitoring</p>
-              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed editable-field editable-active" data-pub-desc="0" contenteditable="true">Addresses wind turbine reliability where low rotational speeds hinder traditional vibration methods, introducing acoustic emission peak frequency criteria.</p>
-            </div>
-            <button onclick="deletePublication(0)" class="text-rose-500 hover:text-rose-700 text-xs font-bold shrink-0 ml-2" title="Remove publication">Delete</button>
+          <div id="publicationsContainer" class="space-y-3.5">
+            <!-- Dynamically rendered -->
           </div>
-        </div><div class="bg-slate-50/70 border border-slate-200 rounded-xl p-3.5 sm:p-4 hover:border-slate-300 transition shadow-2xs">
-          <div class="flex items-start justify-between gap-2">
-            <div class="flex-1">
-              <h4 class="text-xs sm:text-sm font-bold text-slate-900 editable-field editable-active" data-pub-title="1" contenteditable="true">New evaluation method for defects propagation in toroidal roller bearings using dominant frequency of acoustic emission</h4>
-              <p class="text-[11px] text-blue-600 font-medium mt-0.5 editable-field editable-active" data-pub-authors="1" contenteditable="true">Housam Mohammad, František Vlašic, Baraah Maya, Pavel Mazal</p>
-              <p class="text-[11px] font-semibold text-slate-500 mt-0.5 editable-field editable-active" data-pub-journal="1" contenteditable="true">📖 Peer-Reviewed Scientific Article</p>
-              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed editable-field editable-active" data-pub-desc="1" contenteditable="true">Demonstrates toroidal bearing contact characteristics under rolling fatigue, mapping dominant AE frequencies to progressive sub-surface flaking.</p>
-            </div>
-            <button onclick="deletePublication(1)" class="text-rose-500 hover:text-rose-700 text-xs font-bold shrink-0 ml-2" title="Remove publication">Delete</button>
-          </div>
-        </div><div class="bg-slate-50/70 border border-slate-200 rounded-xl p-3.5 sm:p-4 hover:border-slate-300 transition shadow-2xs">
-          <div class="flex items-start justify-between gap-2">
-            <div class="flex-1">
-              <h4 class="text-xs sm:text-sm font-bold text-slate-900 editable-field editable-active" data-pub-title="2" contenteditable="true">Experimental Evaluation of Modified Groundhook Car Suspension with Fast Magnetorheological Damper</h4>
-              <p class="text-[11px] text-blue-600 font-medium mt-0.5 editable-field editable-active" data-pub-authors="2" contenteditable="true">Jiří Žáček, Karel Šebesta, Housam Mohammad, Michal Kubík</p>
-              <p class="text-[11px] font-semibold text-slate-500 mt-0.5 editable-field editable-active" data-pub-journal="2" contenteditable="true">📖 Applied Research Journal</p>
-              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed editable-field editable-active" data-pub-desc="2" contenteditable="true">Quantified dynamic tire grip performance vs. ride comfort tradeoffs using controllable magnetorheological damping systems.</p>
-            </div>
-            <button onclick="deletePublication(2)" class="text-rose-500 hover:text-rose-700 text-xs font-bold shrink-0 ml-2" title="Remove publication">Delete</button>
-          </div>
-        </div></div>
         </div>
 
         <!-- Research Projects & Test Rigs -->
@@ -460,39 +360,181 @@
               <span class="w-2 h-2 rounded-full bg-blue-600 mr-2"></span>
               Experimental R&amp;D &amp; Test Benches
             </h2>
-            <button onclick="addNewProject()" class="edit-only text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-medium hover:bg-blue-100 transition">+ Add Bench</button>
+            <button onclick="addNewProject()" class="edit-only hidden text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-medium hover:bg-blue-100 transition">+ Add Bench</button>
           </div>
 
-          <div id="projectsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div class="bg-slate-50/70 border border-slate-200 rounded-xl p-4 flex flex-col justify-between hover:border-slate-300 transition shadow-2xs">
-          <div>
-            <div class="flex items-center justify-between mb-1">
-              <h4 class="text-xs sm:text-sm font-bold text-slate-800 editable-field editable-active" data-proj-name="0" contenteditable="true">Wind Turbine Bearing CM Test Rig</h4>
-              <span class="text-[10px] uppercase font-bold tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full editable-field editable-active" data-proj-cat="0" contenteditable="true">Acoustic Emission R&amp;D</span>
-            </div>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed editable-field editable-active" data-proj-desc="0" contenteditable="true">Instrumented test bench replicating high-load, low-RPM operational environments with multi-channel piezoelectric AE sensors.</p>
+          <div id="projectsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Dynamically rendered -->
           </div>
-          <div class="mt-3 pt-2 border-t border-slate-200 flex items-center justify-between text-[11px] font-semibold text-slate-500">
-            <span class="editable-field editable-active" data-proj-metric="0" contenteditable="true">⚡ Early defect detection before structural spalling</span>
-            <button onclick="deleteProject(0)" class="text-rose-500 hover:text-rose-700 font-bold ml-2">Delete</button>
-          </div>
-        </div><div class="bg-slate-50/70 border border-slate-200 rounded-xl p-4 flex flex-col justify-between hover:border-slate-300 transition shadow-2xs">
-          <div>
-            <div class="flex items-center justify-between mb-1">
-              <h4 class="text-xs sm:text-sm font-bold text-slate-800 editable-field editable-active" data-proj-name="1" contenteditable="true">RCF Diagnostic Workflow in Toroidal Bearings</h4>
-              <span class="text-[10px] uppercase font-bold tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full editable-field editable-active" data-proj-cat="1" contenteditable="true">Non-Destructive Testing</span>
-            </div>
-            <p class="text-xs text-slate-600 mt-2 leading-relaxed editable-field editable-active" data-proj-desc="1" contenteditable="true">Experimental methodology correlating self-aligning bearing stress distributions with spectral acoustic hit signatures.</p>
-          </div>
-          <div class="mt-3 pt-2 border-t border-slate-200 flex items-center justify-between text-[11px] font-semibold text-slate-500">
-            <span class="editable-field editable-active" data-proj-metric="1" contenteditable="true">⚡ Published methodologies in international journals</span>
-            <button onclick="deleteProject(1)" class="text-rose-500 hover:text-rose-700 font-bold ml-2">Delete</button>
-          </div>
-        </div></div>
         </div>
 
       </section>
     </div>
   </main>
+
+  <!-- ================= MEDIA GALLERY & VIDEO SHOWCASE ================= -->
+  <section id="media-gallery-section" class="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sm:p-8 lg:p-10 mb-12">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 pb-4 mb-6">
+      <div>
+        <div class="flex items-center space-x-2">
+          <span class="p-1.5 bg-blue-50 text-blue-600 rounded-lg">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+          </span>
+          <h2 class="text-lg sm:text-xl font-bold tracking-tight text-slate-900">Research Media &amp; Experimental Demonstrations</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">Laboratory test rigs, Acoustic Emission testing setups, CAD simulations, and video demonstrations.</p>
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <!-- Filter Tabs -->
+        <div class="inline-flex p-1 bg-slate-100 rounded-lg text-xs font-medium">
+          <button onclick="filterMedia('all')" id="filter-all" class="px-3 py-1 rounded-md bg-white text-slate-900 shadow-2xs">All</button>
+          <button onclick="filterMedia('video')" id="filter-video" class="px-3 py-1 rounded-md text-slate-600 hover:text-slate-900">Videos</button>
+          <button onclick="filterMedia('image')" id="filter-image" class="px-3 py-1 rounded-md text-slate-600 hover:text-slate-900">Images</button>
+        </div>
+
+        <button onclick="openAddMediaModal()" class="edit-only hidden inline-flex items-center px-3 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-semibold shadow-xs transition">
+          + Add Media
+        </button>
+      </div>
+    </div>
+
+    <!-- Media Grid -->
+    <div id="mediaGridContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Dynamically generated media items -->
+    </div>
+  </section>
+
+  <!-- ================= PHOTO UPLOADER & AVATAR MODAL ================= -->
+  <div id="photoModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
+        <h3 class="text-base font-bold text-slate-900">Update Profile Photo</h3>
+        <button onclick="closePhotoModal()" class="text-slate-400 hover:text-slate-600 text-lg">✕</button>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Current Preview -->
+        <div class="flex flex-col items-center justify-center">
+          <div class="w-28 h-28 rounded-2xl bg-slate-100 border-2 border-slate-200 overflow-hidden flex items-center justify-center mb-2">
+            <img id="photoModalPreview" src="" alt="Preview" class="w-full h-full object-cover hidden">
+            <span id="photoModalFallback" class="text-2xl font-bold text-slate-400">HM</span>
+          </div>
+          <span class="text-[11px] text-slate-500">Live preview of your profile picture</span>
+        </div>
+
+        <!-- File Upload from Chromebook / Computer -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Upload From Device</label>
+          <input type="file" id="localPhotoInput" accept="image/*" onchange="handleLocalPhotoSelect(event)" class="block w-full text-xs text-slate-500 file:mr-3 file:py-2 file:px-3.5 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer">
+          <p class="text-[11px] text-slate-400 mt-1">Upload a JPG, PNG, or WebP photo directly from your Chromebook.</p>
+        </div>
+
+        <!-- Or Paste Image URL -->
+        <div class="pt-2 border-t border-slate-100">
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Or Image URL</label>
+          <input type="url" id="photoUrlInput" placeholder="https://example.com/photo.jpg" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none" oninput="handlePhotoUrlInput(this.value)">
+        </div>
+
+        <div class="flex items-center justify-between pt-2">
+          <button type="button" onclick="removeCurrentPhoto()" class="text-xs text-rose-600 hover:underline font-medium">
+            Reset to Initials
+          </button>
+          <div class="flex space-x-2">
+            <button type="button" onclick="closePhotoModal()" class="px-3 py-1.5 border border-slate-300 text-slate-700 rounded-lg text-xs font-semibold hover:bg-slate-50">Cancel</button>
+            <button type="button" onclick="savePhotoSelection()" class="px-4 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-semibold shadow-xs">Apply Photo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ADD MEDIA (PICTURE OR VIDEO) MODAL ================= -->
+  <div id="addMediaModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
+        <h3 class="text-base font-bold text-slate-900">Add Research Photo or Video</h3>
+        <button onclick="closeAddMediaModal()" class="text-slate-400 hover:text-slate-600 text-lg">✕</button>
+      </div>
+
+      <div class="space-y-3.5">
+        <!-- Type Selector -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Media Type</label>
+          <div class="grid grid-cols-2 gap-2">
+            <button type="button" id="mediaTypePhotoBtn" onclick="setMediaType('image')" class="py-2 px-3 border-2 border-blue-600 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold text-center">
+              📷 Photo / CAD Render
+            </button>
+            <button type="button" id="mediaTypeVideoBtn" onclick="setMediaType('video')" class="py-2 px-3 border border-slate-200 bg-white text-slate-700 rounded-lg text-xs font-semibold text-center hover:bg-slate-50">
+              🎬 Video (YouTube / Vimeo / MP4)
+            </button>
+          </div>
+        </div>
+
+        <!-- Title -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Title</label>
+          <input type="text" id="newMediaTitle" placeholder="e.g. Toroidal Bearing Fatigue Test Rig" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none">
+        </div>
+
+        <!-- Category / Tag -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Category / Tag</label>
+          <input type="text" id="newMediaTag" placeholder="e.g. Acoustic Emission, CAD Simulation, Experiment" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none">
+        </div>
+
+        <!-- Image Upload or Video URL inputs -->
+        <div id="mediaImageInputs">
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Upload Image From Device</label>
+          <input type="file" id="newMediaFileInput" accept="image/*" onchange="handleNewMediaFile(event)" class="block w-full text-xs text-slate-500 file:mr-3 file:py-2 file:px-3.5 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 cursor-pointer">
+          <p class="text-[10px] text-slate-400 mt-1">Or enter direct image URL below:</p>
+          <input type="url" id="newMediaImgUrl" placeholder="https://..." class="w-full mt-1.5 px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none">
+        </div>
+
+        <div id="mediaVideoInputs" class="hidden">
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Video Link (YouTube, Vimeo, or MP4)</label>
+          <input type="url" id="newMediaVideoUrl" placeholder="https://www.youtube.com/watch?v=... or .mp4 link" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none">
+          <p class="text-[11px] text-slate-500 mt-1">Supports standard YouTube video links, YouTube Shorts, Vimeo, or direct `.mp4` video files.</p>
+        </div>
+
+        <!-- Description -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Brief Description</label>
+          <textarea id="newMediaDesc" rows="2" placeholder="Explain the experimental setup, sensor placements, or engineering findings..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-blue-600 focus:outline-none"></textarea>
+        </div>
+
+        <div class="flex items-center justify-end space-x-2 pt-3 border-t border-slate-200">
+          <button type="button" onclick="closeAddMediaModal()" class="px-3.5 py-2 border border-slate-300 text-slate-700 rounded-lg text-xs font-semibold hover:bg-slate-50">Cancel</button>
+          <button type="button" onclick="submitNewMediaItem()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-xs font-semibold shadow-xs">Add to Gallery</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FULLSCREEN LIGHTBOX MODAL ================= -->
+  <div id="mediaLightbox" class="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" onclick="handleLightboxBackdrop(event)">
+    <div class="relative max-w-4xl w-full bg-slate-950 rounded-2xl overflow-hidden shadow-2xl border border-slate-800" onclick="event.stopPropagation()">
+      <!-- Close button -->
+      <button onclick="closeLightbox()" class="absolute top-3 right-3 z-20 bg-slate-800/80 hover:bg-slate-700 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition">✕</button>
+
+      <!-- Lightbox Media Area -->
+      <div id="lightboxMediaHolder" class="w-full aspect-video-ratio bg-black flex items-center justify-center">
+        <!-- Injected img or iframe / video -->
+      </div>
+
+      <!-- Lightbox Details -->
+      <div class="p-4 sm:p-6 bg-slate-900 text-white">
+        <div class="flex items-center space-x-2 mb-1">
+          <span id="lightboxTag" class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-900/60 text-blue-300 border border-blue-700">Category</span>
+          <span id="lightboxTypeBadge" class="text-[10px] text-slate-400">Media</span>
+        </div>
+        <h3 id="lightboxTitle" class="text-base sm:text-lg font-bold text-white">Title</h3>
+        <p id="lightboxDesc" class="text-xs sm:text-sm text-slate-300 mt-1.5 leading-relaxed">Description text</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Admin Authentication Modal -->
   <div id="authModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
@@ -503,12 +545,12 @@
         </svg>
       </div>
       <h3 class="text-lg font-bold text-center text-slate-900">Editor Authentication</h3>
-      <p class="text-xs text-slate-500 text-center mt-1 mb-4">Enter password to unlock direct in-browser editing.<br><span class="text-blue-600 font-semibold">(Default password: admin)</span></p>
+      <p class="text-xs text-slate-500 text-center mt-1 mb-4">Enter passcode to unlock in-browser editing and media management.<br><span class="text-blue-600 font-semibold">(Default passcode: admin)</span></p>
 
       <form onsubmit="handleAuthSubmit(event)">
         <div class="mb-4">
           <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Passcode</label>
-          <input id="authInputPassword" type="password" placeholder="••••••••" required="" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+          <input id="authInputPassword" type="password" placeholder="••••••••" required class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
           <p id="authError" class="hidden text-xs text-rose-500 mt-1 font-medium">Incorrect password. Please try again.</p>
         </div>
         <div class="flex items-center space-x-2">
@@ -547,7 +589,7 @@
   <!-- Toast Notification -->
   <div id="toastMessage" class="no-print fixed bottom-5 right-5 z-50 bg-slate-900 text-white text-xs font-medium px-4 py-3 rounded-xl shadow-2xl border border-slate-700 flex items-center space-x-2 transition duration-300 hidden">
     <span id="toastIcon">✅</span>
-    <span id="toastText">🔓 Admin Mode Active. Click any text to customize directly.</span>
+    <span id="toastText">Notification message</span>
   </div>
 
   <script>
@@ -652,20 +694,51 @@
           description: "Experimental methodology correlating self-aligning bearing stress distributions with spectral acoustic hit signatures.",
           metrics: "Published methodologies in international journals"
         }
+      ],
+      gallery: [
+        {
+          id: 101,
+          type: "image",
+          title: "Toroidal Roller Bearing Test Bench",
+          category: "Experimental Setup",
+          url: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+          description: "Custom instrumented experimental rig analyzing rolling contact fatigue in self-aligning bearings with mounted AE sensors."
+        },
+        {
+          id: 102,
+          type: "video",
+          title: "Acoustic Emission Signal Analysis & Spectral Hits",
+          category: "Condition Monitoring",
+          url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Sample embeddable video
+          description: "High-frequency signal processing demonstration of acoustic hits during subsurface micro-crack nucleation."
+        },
+        {
+          id: 103,
+          type: "image",
+          title: "Finite Element Stress Simulation (FEA)",
+          category: "CAD & CAE",
+          url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+          description: "ANSYS contact stress distribution on toroidal roller profile under extreme radial load combinations."
+        }
       ]
     };
 
     let isEditMode = false;
     let resumeData = {};
-    const STORAGE_KEY = "dr_housam_resume_data_v1";
+    let activeFilter = 'all';
+    let tempPhotoBase64 = null;
+    let selectedMediaType = 'image';
+    let tempNewMediaBase64 = null;
+
+    const STORAGE_KEY = "dr_housam_resume_data_v2";
     const PASS_KEY = "dr_housam_resume_pass_v1";
 
     function initApp() {
-      // Load saved resume data from local storage if existing
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         try {
           resumeData = JSON.parse(saved);
+          if (!resumeData.gallery) resumeData.gallery = JSON.parse(JSON.stringify(DEFAULT_DATA.gallery));
         } catch (e) {
           resumeData = JSON.parse(JSON.stringify(DEFAULT_DATA));
         }
@@ -673,16 +746,16 @@
         resumeData = JSON.parse(JSON.stringify(DEFAULT_DATA));
       }
 
-      // Default password initialization
       if (!localStorage.getItem(PASS_KEY)) {
         localStorage.setItem(PASS_KEY, "admin");
       }
 
       renderResume();
+      renderMediaGallery();
     }
 
     function renderResume() {
-      // 1. Text metadata
+      // 1. Core Profile Details
       setElText('fullName', resumeData.name);
       setElText('targetTitle', resumeData.title);
       setElText('institutionName', resumeData.institution);
@@ -697,7 +770,7 @@
       const credsEl = document.getElementById('credentialsList');
       if (credsEl) credsEl.innerHTML = resumeData.credentials || "";
 
-      // Education keys
+      // Education items
       setKeyText('edu1_degree', resumeData.edu1_degree);
       setKeyText('edu1_year', resumeData.edu1_year);
       setKeyText('edu1_field', resumeData.edu1_field);
@@ -707,7 +780,7 @@
       setKeyText('edu2_field', resumeData.edu2_field);
       setKeyText('edu2_school', resumeData.edu2_school);
 
-      // 2. Avatar Initial Handling
+      // 2. Avatar Photo Handling
       const initials = (resumeData.name || "HM").replace(/Dr\.|Ing\.|Ph\.D\./g, "").trim().split(" ").filter(Boolean).map(n => n[0]).join("").slice(0, 2).toUpperCase() || "HM";
       const initialsEl = document.getElementById('avatarInitials');
       const avatarImg = document.getElementById('avatarImage');
@@ -735,7 +808,7 @@
         skillsBox.appendChild(span);
       });
 
-      // 4. Render Work / Research Experiences
+      // 4. Render Work & Research Appointments
       const expBox = document.getElementById('experienceTimeline');
       expBox.innerHTML = '';
       (resumeData.experiences || []).forEach((job, jIdx) => {
@@ -815,11 +888,347 @@
         projBox.appendChild(div);
       });
 
-      // Update editable state
       toggleContentEditable(isEditMode);
     }
 
-    /* Helper utility for setting text safe */
+    function renderMediaGallery() {
+      const container = document.getElementById('mediaGridContainer');
+      if (!container) return;
+      container.innerHTML = '';
+
+      const items = (resumeData.gallery || []).filter(item => {
+        if (activeFilter === 'all') return true;
+        return item.type === activeFilter;
+      });
+
+      if (items.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full text-center py-10 border-2 border-dashed border-slate-200 rounded-xl">
+            <p class="text-sm font-medium text-slate-500">No media found in this filter category.</p>
+            ${isEditMode ? `<button onclick="openAddMediaModal()" class="mt-2 text-xs font-semibold text-blue-600 hover:underline">+ Add new item now</button>` : ''}
+          </div>
+        `;
+        return;
+      }
+
+      items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "group relative bg-white border border-slate-200 rounded-xl overflow-hidden shadow-2xs hover:shadow-md transition-all flex flex-col justify-between";
+
+        let mediaThumbnailHtml = '';
+        if (item.type === 'video') {
+          // If it's a YouTube video, generate YouTube thumbnail automatically
+          const ytId = getYouTubeId(item.url);
+          const thumb = ytId ? `https://img.youtube.com/vi/${ytId}/hqdefault.jpg` : 'https://placehold.co/600x340/1e293b/ffffff?text=Video+Demonstration';
+          mediaThumbnailHtml = `
+            <div class="aspect-video-ratio bg-slate-900 cursor-pointer group-hover:opacity-95 transition" onclick="openLightboxById(${item.id})">
+              <img src="${thumb}" alt="${item.title}" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-full bg-blue-600/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition">
+                  <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <span class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-semibold px-2 py-0.5 rounded">VIDEO</span>
+            </div>
+          `;
+        } else {
+          // Standard Image
+          mediaThumbnailHtml = `
+            <div class="aspect-video-ratio bg-slate-100 cursor-pointer overflow-hidden" onclick="openLightboxById(${item.id})">
+              <img src="${item.url}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+              <span class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-semibold px-2 py-0.5 rounded">PHOTO</span>
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+          <div>
+            ${mediaThumbnailHtml}
+            <div class="p-4">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">${item.category || 'Research'}</span>
+                ${isEditMode ? `<button onclick="deleteMediaItem(${item.id})" class="text-rose-500 hover:text-rose-700 text-xs font-semibold">Delete</button>` : ''}
+              </div>
+              <h4 class="text-sm font-bold text-slate-900 leading-snug cursor-pointer hover:text-blue-600 transition" onclick="openLightboxById(${item.id})">${item.title}</h4>
+              <p class="text-xs text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">${item.description || ''}</p>
+            </div>
+          </div>
+          <div class="px-4 pb-3.5 pt-1 border-t border-slate-100 flex items-center justify-between text-xs">
+            <button onclick="openLightboxById(${item.id})" class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center">
+              View Fullscreen
+              <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterMedia(type) {
+      activeFilter = type;
+      ['all', 'video', 'image'].forEach(t => {
+        const btn = document.getElementById(`filter-${t}`);
+        if (btn) {
+          if (t === type) {
+            btn.className = "px-3 py-1 rounded-md bg-white text-slate-900 shadow-2xs font-semibold";
+          } else {
+            btn.className = "px-3 py-1 rounded-md text-slate-600 hover:text-slate-900";
+          }
+        }
+      });
+      renderMediaGallery();
+    }
+
+    function openLightboxById(id) {
+      const item = (resumeData.gallery || []).find(g => g.id === id);
+      if (!item) return;
+
+      const holder = document.getElementById('lightboxMediaHolder');
+      const title = document.getElementById('lightboxTitle');
+      const desc = document.getElementById('lightboxDesc');
+      const tag = document.getElementById('lightboxTag');
+      const badge = document.getElementById('lightboxTypeBadge');
+
+      title.textContent = item.title;
+      desc.textContent = item.description || '';
+      tag.textContent = item.category || 'Research';
+      badge.textContent = item.type === 'video' ? 'Video Demonstration' : 'High-Resolution Photograph';
+
+      holder.innerHTML = '';
+
+      if (item.type === 'video') {
+        const ytId = getYouTubeId(item.url);
+        const vimeoId = getVimeoId(item.url);
+
+        if (ytId) {
+          holder.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>`;
+        } else if (vimeoId) {
+          holder.innerHTML = `<iframe src="https://player.vimeo.com/video/${vimeoId}?autoplay=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>`;
+        } else {
+          // Direct MP4 or video source
+          holder.innerHTML = `<video src="${item.url}" controls autoplay class="w-full h-full object-contain"></video>`;
+        }
+      } else {
+        holder.innerHTML = `<img src="${item.url}" alt="${item.title}" class="w-full h-full object-contain">`;
+      }
+
+      document.getElementById('mediaLightbox').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      const holder = document.getElementById('lightboxMediaHolder');
+      holder.innerHTML = ''; // Stop video playback
+      document.getElementById('mediaLightbox').classList.add('hidden');
+    }
+
+    function handleLightboxBackdrop(e) {
+      if (e.target.id === 'mediaLightbox') {
+        closeLightbox();
+      }
+    }
+
+    // Helper functions for video IDs
+    function getYouTubeId(url) {
+      if (!url) return null;
+      const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|shorts\/)([^#\&\?]*).*/;
+      const match = url.match(regExp);
+      return (match && match[2].length === 11) ? match[2] : null;
+    }
+
+    function getVimeoId(url) {
+      if (!url) return null;
+      const match = url.match(/vimeo.*\/(\d+)/i);
+      return match ? match[1] : null;
+    }
+
+    function openPhotoModal() {
+      tempPhotoBase64 = null;
+      const currentUrl = resumeData.photoUrl || '';
+      document.getElementById('photoUrlInput').value = currentUrl;
+      const previewImg = document.getElementById('photoModalPreview');
+      const fallback = document.getElementById('photoModalFallback');
+
+      if (currentUrl) {
+        previewImg.src = currentUrl;
+        previewImg.classList.remove('hidden');
+        fallback.classList.add('hidden');
+      } else {
+        previewImg.classList.add('hidden');
+        fallback.classList.remove('hidden');
+      }
+
+      document.getElementById('localPhotoInput').value = '';
+      document.getElementById('photoModal').classList.remove('hidden');
+    }
+
+    function closePhotoModal() {
+      document.getElementById('photoModal').classList.add('hidden');
+    }
+
+    function handlePhotoUrlInput(val) {
+      const previewImg = document.getElementById('photoModalPreview');
+      const fallback = document.getElementById('photoModalFallback');
+      if (val && val.trim()) {
+        previewImg.src = val.trim();
+        previewImg.classList.remove('hidden');
+        fallback.classList.add('hidden');
+        tempPhotoBase64 = val.trim();
+      } else {
+        previewImg.classList.add('hidden');
+        fallback.classList.remove('hidden');
+        tempPhotoBase64 = '';
+      }
+    }
+
+    function handleLocalPhotoSelect(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      if (file.size > 4 * 1024 * 1024) {
+        alert("Image is larger than 4MB. Please choose a smaller image for fast loading.");
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        tempPhotoBase64 = e.target.result;
+        const previewImg = document.getElementById('photoModalPreview');
+        const fallback = document.getElementById('photoModalFallback');
+        previewImg.src = tempPhotoBase64;
+        previewImg.classList.remove('hidden');
+        fallback.classList.add('hidden');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function removeCurrentPhoto() {
+      tempPhotoBase64 = '';
+      document.getElementById('photoUrlInput').value = '';
+      const previewImg = document.getElementById('photoModalPreview');
+      const fallback = document.getElementById('photoModalFallback');
+      previewImg.classList.add('hidden');
+      fallback.classList.remove('hidden');
+    }
+
+    function savePhotoSelection() {
+      if (tempPhotoBase64 !== null) {
+        resumeData.photoUrl = tempPhotoBase64;
+      } else {
+        const inputVal = document.getElementById('photoUrlInput').value.trim();
+        resumeData.photoUrl = inputVal;
+      }
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(resumeData));
+      renderResume();
+      closePhotoModal();
+      showToast("Profile photo updated successfully!", "success");
+    }
+
+    function openAddMediaModal() {
+      selectedMediaType = 'image';
+      tempNewMediaBase64 = null;
+      setMediaType('image');
+      document.getElementById('newMediaTitle').value = '';
+      document.getElementById('newMediaTag').value = '';
+      document.getElementById('newMediaDesc').value = '';
+      document.getElementById('newMediaImgUrl').value = '';
+      document.getElementById('newMediaVideoUrl').value = '';
+      document.getElementById('newMediaFileInput').value = '';
+      document.getElementById('addMediaModal').classList.remove('hidden');
+    }
+
+    function closeAddMediaModal() {
+      document.getElementById('addMediaModal').classList.add('hidden');
+    }
+
+    function setMediaType(type) {
+      selectedMediaType = type;
+      const photoBtn = document.getElementById('mediaTypePhotoBtn');
+      const videoBtn = document.getElementById('mediaTypeVideoBtn');
+      const imgInputs = document.getElementById('mediaImageInputs');
+      const vidInputs = document.getElementById('mediaVideoInputs');
+
+      if (type === 'image') {
+        photoBtn.className = "py-2 px-3 border-2 border-blue-600 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold text-center";
+        videoBtn.className = "py-2 px-3 border border-slate-200 bg-white text-slate-700 rounded-lg text-xs font-semibold text-center hover:bg-slate-50";
+        imgInputs.classList.remove('hidden');
+        vidInputs.classList.add('hidden');
+      } else {
+        videoBtn.className = "py-2 px-3 border-2 border-blue-600 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold text-center";
+        photoBtn.className = "py-2 px-3 border border-slate-200 bg-white text-slate-700 rounded-lg text-xs font-semibold text-center hover:bg-slate-50";
+        imgInputs.classList.add('hidden');
+        vidInputs.classList.remove('hidden');
+      }
+    }
+
+    function handleNewMediaFile(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      if (file.size > 5 * 1024 * 1024) {
+        alert("Image exceeds 5MB. Please choose an optimized image for fast web performance.");
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        tempNewMediaBase64 = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function submitNewMediaItem() {
+      const title = document.getElementById('newMediaTitle').value.trim();
+      const tag = document.getElementById('newMediaTag').value.trim() || 'Laboratory';
+      const desc = document.getElementById('newMediaDesc').value.trim();
+
+      if (!title) {
+        alert("Please provide a title for the media item.");
+        return;
+      }
+
+      let finalUrl = '';
+      if (selectedMediaType === 'image') {
+        finalUrl = tempNewMediaBase64 || document.getElementById('newMediaImgUrl').value.trim();
+        if (!finalUrl) {
+          alert("Please upload an image or provide an image link.");
+          return;
+        }
+      } else {
+        finalUrl = document.getElementById('newMediaVideoUrl').value.trim();
+        if (!finalUrl) {
+          alert("Please provide a YouTube, Vimeo, or MP4 video URL.");
+          return;
+        }
+      }
+
+      const newItem = {
+        id: Date.now(),
+        type: selectedMediaType,
+        title: title,
+        category: tag,
+        url: finalUrl,
+        description: desc
+      };
+
+      if (!resumeData.gallery) resumeData.gallery = [];
+      resumeData.gallery.unshift(newItem);
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(resumeData));
+      renderMediaGallery();
+      closeAddMediaModal();
+      showToast("Media item added to your portfolio gallery!", "success");
+    }
+
+    function deleteMediaItem(id) {
+      if (confirm("Remove this media card from the portfolio?")) {
+        resumeData.gallery = (resumeData.gallery || []).filter(item => item.id !== id);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(resumeData));
+        renderMediaGallery();
+        showToast("Item deleted.");
+      }
+    }
+
     function setElText(id, text) {
       const el = document.getElementById(id);
       if (el && text !== undefined) el.textContent = text;
@@ -859,7 +1268,6 @@
       }
     }
 
-    /* Authentication management */
     function toggleEditAuth() {
       if (isEditMode) {
         exitEditMode();
@@ -888,7 +1296,8 @@
         isEditMode = true;
         closeAuthModal();
         renderResume();
-        showToast("🔓 Admin Mode Active. Click any text to customize directly.", "success");
+        renderMediaGallery();
+        showToast("🔓 Admin Mode Active. Photo & Video tools enabled.", "success");
       } else {
         document.getElementById('authError').classList.remove('hidden');
       }
@@ -898,22 +1307,12 @@
       saveAllChanges(false);
       isEditMode = false;
       renderResume();
+      renderMediaGallery();
       showToast("🔒 Live Edit Mode Locked.", "info");
     }
 
-    function discardChanges() {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        resumeData = JSON.parse(saved);
-      } else {
-        resumeData = JSON.parse(JSON.stringify(DEFAULT_DATA));
-      }
-      renderResume();
-      showToast("Discarded unsaved modifications.", "info");
-    }
-
     function saveAllChanges(notify = true) {
-      // 1. Static keys
+      // Static keys
       document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
         if (key === 'credentials') {
@@ -923,7 +1322,7 @@
         }
       });
 
-      // 2. Skills
+      // Skills
       document.querySelectorAll('[data-skill-idx]').forEach(el => {
         const idx = parseInt(el.getAttribute('data-skill-idx'));
         if (resumeData.skills[idx] !== undefined) {
@@ -931,7 +1330,7 @@
         }
       });
 
-      // 3. Experiences
+      // Experiences
       document.querySelectorAll('[data-job-role]').forEach(el => {
         const idx = parseInt(el.getAttribute('data-job-role'));
         if (resumeData.experiences[idx]) resumeData.experiences[idx].role = el.innerText.trim();
@@ -955,7 +1354,7 @@
         }
       });
 
-      // 4. Publications
+      // Publications
       document.querySelectorAll('[data-pub-title]').forEach(el => {
         const idx = parseInt(el.getAttribute('data-pub-title'));
         if (resumeData.publications[idx]) resumeData.publications[idx].title = el.innerText.trim();
@@ -973,7 +1372,7 @@
         if (resumeData.publications[idx]) resumeData.publications[idx].description = el.innerText.trim();
       });
 
-      // 5. Projects
+      // Projects
       document.querySelectorAll('[data-proj-name]').forEach(el => {
         const idx = parseInt(el.getAttribute('data-proj-name'));
         if (resumeData.projects[idx]) resumeData.projects[idx].name = el.innerText.trim();
@@ -991,17 +1390,15 @@
         if (resumeData.projects[idx]) resumeData.projects[idx].metrics = el.innerText.replace('⚡', '').trim();
       });
 
-      // Persist in localStorage
       localStorage.setItem(STORAGE_KEY, JSON.stringify(resumeData));
-      
       if (notify) {
-        showToast("✅ All modifications saved directly to localStorage!", "success");
+        showToast("✅ All modifications saved successfully!", "success");
       }
     }
 
     /* CRUD Operations for Skills, Experience, Publications, Projects */
     function addNewSkill() {
-      const newSkill = prompt("Enter new engineering skill or tool:", "Tribology & Wear Testing");
+      const newSkill = prompt("Enter new engineering skill or tool:", "Signal FFT & Wavelet Analysis");
       if (newSkill && newSkill.trim()) {
         resumeData.skills.push(newSkill.trim());
         renderResume();
@@ -1020,7 +1417,7 @@
         role: "New Academic / Research Role",
         company: "Brno University of Technology",
         employmentType: "Full-time",
-        period: "2025 — Present",
+        period: "2026 — Present",
         bullets: ["Description of investigation, laboratory testing, or pedagogical duties."]
       };
       resumeData.experiences.unshift(newJob);
@@ -1081,26 +1478,17 @@
       renderResume();
     }
 
-    function promptPhotoUrl() {
-      const current = resumeData.photoUrl || "";
-      const url = prompt("Enter direct image URL for your profile photo (leave blank for initials):", current);
-      if (url !== null) {
-        resumeData.photoUrl = url.trim();
-        saveAllChanges(false);
-        renderResume();
-      }
-    }
-
     function resetDefaultData() {
-      if (confirm("Reset all resume information back to original default settings?")) {
+      if (confirm("Reset all resume information and media gallery back to original default settings?")) {
         resumeData = JSON.parse(JSON.stringify(DEFAULT_DATA));
         localStorage.setItem(STORAGE_KEY, JSON.stringify(resumeData));
         renderResume();
+        renderMediaGallery();
         showToast("Reset to default profile data.", "info");
       }
     }
 
-    /* Password administration */
+    /* Passcode management */
     function openSecurityModal() {
       document.getElementById('currentPassInput').value = '';
       document.getElementById('newPassInput').value = '';
@@ -1152,10 +1540,9 @@
       }, 3500);
     }
 
-    // Initialize application on window load
     window.onload = function() {
       initApp();
     };
   </script>
-
-</body></html>
+</body>
+</html>
